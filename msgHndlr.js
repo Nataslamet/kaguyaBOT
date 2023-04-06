@@ -120,7 +120,8 @@ module.exports = msgHndlr = async (client, message) => {
                 }
             }
             break
-            case "qc": {
+            case "qc":
+            case "q": {
                 logMsg(command, pushname)
                 if (!q && !hasQuotedMsg) return message.reply("Silahkan kirim/balas pesan teks")
                 if (q.length > 20) return message.reply("Maksimal 20 huruf!")
@@ -135,7 +136,7 @@ module.exports = msgHndlr = async (client, message) => {
                 }
             }
             break
-            
+
             // DOWNLOADER
             case "ytmp3": {
                 logMsg(command, pushname)
