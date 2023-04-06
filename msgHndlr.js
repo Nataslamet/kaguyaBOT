@@ -28,7 +28,7 @@ module.exports = msgHndlr = async (client, message) => {
         const groupMetadata = chat?.groupMetadata
         const groupAdmins = groupMetadata?.participants.filter(x => x.isAdmin).map(x => x.id._serialized)
 
-        const isOwner = sender == "6285745351659@c.us" // change your whatsapp owner number
+        const isOwner = sender == "628991544516@c.us" // change your whatsapp owner number
         const isBotAdmin = groupAdmins?.includes(client.info.me._serialized)
         const isAdmin = groupAdmins?.includes(sender)
 
